@@ -21,8 +21,6 @@
     unzip
     progress
     (nerdfonts.override { fonts = [ "Iosevka" ]; })
-    clippy
-    rust-analyzer
     # Kubernetes Tools
     kubectx
     kubectl
@@ -30,7 +28,6 @@
     kubernetes-helm
     # Build utilities
     gnumake
-    cargo
   ];
   home.stateVersion = "23.05";
   programs.home-manager.enable = true;
