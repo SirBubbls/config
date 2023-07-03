@@ -178,6 +178,7 @@ end
 -- Configuration
 local telescope_conf = {
         defaults = {
+                path_display = { "smart" },
                 mappings = {
                         i = {
                                 ["<C-e>"] = "move_selection_previous"
@@ -194,7 +195,8 @@ local telescope_conf = {
                                 i = {
                                         ["<C-e>"] = "move_selection_previous",
                                 }
-                        }
+                        },
+                        find_command = { "rg", "--files", "--hidden", "--glob", "!**/.git/*", "--max-filesize", "100K" }
                 }
         },
         extensions = {
